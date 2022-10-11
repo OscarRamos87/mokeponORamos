@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./assets/EstadiumPokemon.jpg");
+    background-size: cover;
+}
+#Seleccionar-Mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 32px;
+}
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #FFB200;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    background-color: #FFCB42;
+    transform: scale(110%);
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#insertar-mascota-enemigo img, #insertar-mascota-jugador img {
+    width: 80px;
+}
+
+.Tabla-Imagenes {
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    background-color: #FFCB42;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+#Boton-Mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #277BC0;
+    border: 3px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+#Boton-Mascota:hover {
+cursor: pointer;
+background-color: gray;
+transform: scale(110%);
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    border: solid 3px #FFCB42;
+    transform: scale(110%);
+}
+
+#Seleccionar-Ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #FFB200;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton-de-ataque:hover {
+cursor: pointer;
+background-color: #FFCB42;
+transform: scale(110%);
+}
+
+#Mensajes {
+    background-color: transparent;
+    width: 250px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+}
+
+#Boton-Reiniciar {
+    border: none;
+    background-color: #277BC0;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#Boton-Reiniciar:hover {
+    cursor: pointer;
+    background-color: gray;
+    transform: scale(110%);
+}
+
+.Jugador, .Enemigo, #VS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#VS {
+    font-weight: bolder;
+    font-size: 30px;
+}
+#Vidas-Jugador, #Vidas-Enemigo {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#Nombre {
+    font-weight: bolder;
+}
+
+#Mascota-Jugador, #Mascota-Enemigo, #ataques-del-jugador, #ataques-del-enemigo, #vidas {
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}

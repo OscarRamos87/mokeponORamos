@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MOKEPON!</title> 
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section id="Seleccionar-Mascota">
+            <h1 class="titulo">Mokepon</h1>
+
+            <h2 class="subtitulo">Elige a tu Mascota:</h2>
+
+            <div id="contenedorTarjetas" class="tarjetas">
+                
+            </div>
+       
+            <!--
+            Hipodoge -> Agua
+            Capipepo -> Tierra
+            Ratigueya -> Fuego
+            Langostelvis -> Agua y Fuego
+            Tucapalma -> Agua y Tierra
+            Pydos -> Tierra y Fuego //
+            --> 
+            <button id="Boton-Mascota">Seleccionar</button>
+        </section>
+
+        <section id="Seleccionar-Ataque">
+            <h1 class="titulo">Mokepon</h1>
+
+            <h2 class="subtitulo">Elige a tu Ataque:</h2>
+
+            <div id="contenedorAtaques" class="tarjetas-ataques">
+                
+            </div>
+            
+            <div id="Mensajes"> 
+                    <p id="resultado">Mucha Suerte!</p>
+                    <section id="Reiniciar">
+                        <button id="Boton-Reiniciar">Reiniciar</button>
+                    </section>
+            </div>
+            
+            <div class="Tabla-Imagenes">
+                <div class="Jugador">
+                    <p id="Nombre">Jugador</p>
+                    <p id="Mascota-Jugador"></p>
+                    <p id="insertar-mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                    <p id="Vidas-Jugador">0</p>
+                    <p id="vidas">victorias</p>
+                </div>
+                
+                <p id="VS">VS</p>
+
+                <div class="Enemigo">
+                    <p id="Nombre">Enemigo</p>
+                    <p id="Mascota-Enemigo"></p>
+                    <p id="insertar-mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                    <p id="Vidas-Enemigo">0</p>
+                    <p id="vidas">victorias</p>
+                </div>
+            </div>
+        </section>
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>
